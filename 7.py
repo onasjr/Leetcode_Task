@@ -1,8 +1,7 @@
-import pdb
-import copy
+
+# 思路:先判断给定整数x的正负情况，把符号首先给提取出来,记为flag
+# 然后将abs(x)变成字符串，接着将字符串反转，最后恢复成整数
 class Solution(object):
-    # 本题的思路就是先判断给定整数x的正负情况，把符号首先给提取出来
-    # 然后将abs(x)变成字符串，接着将字符串反转，最后恢复成整数
     def reverse(self, x):
         """
                 :type x: int
