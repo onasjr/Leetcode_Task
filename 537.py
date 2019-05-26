@@ -33,3 +33,13 @@ class Solution(object):
         ans1 = a1*b1 - a2*b2
         ans2 = a1*b2 + a2*b1
         return str(ans1) + "+" + str(ans2) + "i"
+
+## 运用split
+    
+    class Solution:
+    def complexNumberMultiply(self, a: str, b: str) -> str:
+        a, b = a[:-1], b[:-1]
+        a1, a2 = a.split("+")
+        b1, b2 = b.split("+")
+        a1, a2, b1, b2 = int(a1), int(a2), int(b1), int(b2)
+        return str(a1*b1-a2*b2) + "+" + str(a1*b2+a2*b1) + "i"
